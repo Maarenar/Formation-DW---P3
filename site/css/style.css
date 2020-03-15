@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-family: Monserrat, sans-serif, Arial, Helvetica;
+}
+
+/*pourquoi les elements button et a heritent de font-family place en body mais pas de color?*/
+
+/*-----------------------------------------------*/
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #689A88;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	font-size: 3em;
+	color: #F5CD60;
+}
+
+/*-----------------------------------------------*/
+section{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 100px;
+	width: 83%;
+}
+
+section div{
+	max-width: 400px;
+	max-height: 566px;
+	box-shadow: 0px 0px 10px 0px rgba(201,197,201,1);
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+section img{
+	width: 100%;
+}
+
+section img:hover{
+	animation: zoomout 1s;
+}
+
+@keyframes zoomout{
+	from{
+		transform: scale(1);
+	}to{
+		transform: scale(1.2);
+	}
+}
+
+/*-----------------------------------------------*/
+
+button{
+	margin-bottom: 50px;
+	color: #F5CD60;
+	font-size: 2em;
+	background-color: #689A88;
+	border-radius: 10px;
+	padding: 5px 50px 5px 50px;
+	border: none;
+}
+
+/*-----------------------------------------------*/
+footer{
+	height: 75px;
+	width: 100%;
+	background-color: #689A88;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer a{
+	margin-left: 50px;
+	margin-right: 50px;
+	text-decoration: none;
+	color: #F5CD60;
+	font-size: 1.5em;
+}
+
+footer a:hover{
+	animation: wiggle 0.3s;
+}
+
+@keyframes wiggle{
+	0%{
+		rotate: 0deg;
+	}
+	10%{
+		rotate: 5deg;
+	}
+	20%{
+		rotate: 0deg;
+	}
+	30%{
+		rotate: -5deg;
+	}
+	40%{
+		rotate: 0deg;
+	}
+	50%{
+		rotate: 5deg;
+	}
+	60%{
+		rotate:0deg;
+	}
+	70%{
+		rotate: -5deg;
+	}
+	80%{
+		rotate: 0deg;
+	}
+	90%{
+		rotate: 5deg;
+	}
+	100%{
+		rotate: 0deg;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
