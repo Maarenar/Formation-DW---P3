@@ -131,6 +131,9 @@ h4{
 .menu_item{
 	width: 80%;
 	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #item_1{
@@ -153,6 +156,7 @@ h4{
 
 .menu_item_title{
 	align-items: center;
+	width: 100%;
 }
 
 .menu_item_title img{
@@ -160,37 +164,41 @@ h4{
 	max-height: 8px;
 }
 
-.menu_2_trait_2{
+.trait_2{
 	transform: rotateY(180deg);
+}
+
+.menu_item_composition{
+	width: 80%;
 }
 
 #menu_item_composition_last{
 	display: flex;
 	flex-direction: column;
+	width: 80%;
 }
 
-#last_item{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
 
-#last_item img{
-	max-width: 31px;
-	max-height: 30px;
-	margin-right: 15px;
-}
 
-#last_item p{
-	font-weight: bold;
-}
 
 @media all and (max-width: 768px){
+	.menu_item_title img{
+		width: 28%;
+	}
+	h4{
+		font-size: 0.8em;
+	}
 	.menu_item_composition{
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+	}
+	.menu_item_composition p{
+		text-align: center;
+	}
+	#menu_item_composition_last{
+		align-items: center;
+		text-align: center;
 	}
 }
 
@@ -201,13 +209,16 @@ h4{
 	.menu_item_title img{
 		width: 50%;
 	}
-	.menu_item_composition p{
-		text-align: center;
-	}
 	footer a{
 		font-size: 1em;
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+}
+
+@media all and (max-width: 430px){
+	h3{
+		text-align: center;
 	}
 }
 
