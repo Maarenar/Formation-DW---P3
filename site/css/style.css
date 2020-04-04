@@ -32,16 +32,10 @@ header a {
   color: #F5CD60;
   text-decoration: none;
 }
-
-h2 {
-  margin-bottom: 10px;
-  font-size: 1em;
-  font-weight: 100;
-}
-
-p {
-  margin-top: 5px;
-  margin-bottom: 5px;
+@media all and (min-width: 992px) {
+  header a {
+    font-size: 45px;
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------
@@ -50,7 +44,7 @@ p {
 footer {
   position: fixed;
   bottom: 0;
-  height: 30px;
+  height: 37px;
   width: 100%;
   background-color: #689A88;
   display: flex;
@@ -58,12 +52,22 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+@media all and (min-width: 992px) {
+  footer {
+    height: 50px;
+  }
+}
 footer a {
   text-decoration: none;
   color: #F5CD60;
-  font-size: 0.7em;
+  font-size: 14px;
   margin-left: 10px;
   margin-right: 10px;
+}
+@media all and (min-width: 992px) {
+  footer a {
+    font-size: 20px;
+  }
 }
 footer a:hover {
   animation: wiggle 0.3s;
@@ -115,12 +119,27 @@ footer a:hover {
   justify-content: space-around;
   margin-top: 20px;
 }
+@media all and (min-width: 992px) {
+  #home {
+    margin-top: 80px;
+  }
+}
 #home a {
   display: inline-block;
   overflow: hidden;
   width: 40%;
   box-shadow: 0px 0px 10px 0px #c9c5c9;
   margin-bottom: 40px;
+}
+@media all and (min-width: 576px) {
+  #home a {
+    width: 34%;
+  }
+}
+@media all and (min-width: 992px) {
+  #home a {
+    width: 22%;
+  }
 }
 #home img {
   width: 100%;
@@ -141,11 +160,22 @@ footer a:hover {
 button {
   margin-bottom: 50px;
   color: #F5CD60;
-  font-size: 1em;
+  font-size: 12px;
   background-color: #689A88;
   border-radius: 5px;
   padding: 5px 20px 5px 20px;
   border: none;
+}
+@media all and (min-width: 768px) {
+  button {
+    font-size: 20px;
+  }
+}
+@media all and (min-width: 992px) {
+  button {
+    font-size: 20px;
+    padding: 10px 25px 10px 25px;
+  }
 }
 button span {
   animation-name: blink;
@@ -184,23 +214,51 @@ button span:nth-child(3) {
   align-items: center;
   margin-bottom: 20px;
 }
+@media all and (min-width: 992px) {
+  .pages_menu {
+    margin-bottom: 40px;
+  }
+}
+
+h2 {
+  margin-bottom: 35px;
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 100;
+}
+@media all and (min-width: 992px) {
+  h2 {
+    font-size: 30px;
+  }
+}
 
 .sub_section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.8em;
+  font-size: 10px;
   box-shadow: 0px 0px 10px 0px #c9c5c9;
   margin-bottom: 30px;
   width: 90%;
 }
+@media all and (min-width: 768px) {
+  .sub_section {
+    width: 60%;
+    margin-top: 30px;
+  }
+}
 
 .menu_item {
-  width: 90%;
+  width: 81%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
+}
+@media all and (min-width: 992px) {
+  .menu_item {
+    margin-bottom: 15px;
+  }
 }
 
 .title {
@@ -209,18 +267,32 @@ button span:nth-child(3) {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 5px;
   height: 30px;
+}
+@media all and (min-width: 992px) {
+  .title {
+    margin-bottom: 30px;
+  }
 }
 .title img {
   max-height: 5px;
-  width: 30%;
+  width: 29%;
 }
 .title img.reverse {
   transform: rotateY(180deg);
 }
-.title img.smaller_width {
-  width: 22%;
+.title h4 {
+  font-size: 12px;
+}
+@media all and (min-width: 576px) {
+  .title h4 {
+    font-size: 15px;
+  }
+}
+@media all and (min-width: 992px) {
+  .title h4 {
+    font-size: 20px;
+  }
 }
 
 .composition {
@@ -228,6 +300,22 @@ button span:nth-child(3) {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+}
+.composition p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+@media all and (min-width: 576px) {
+  .composition p {
+    font-size: 15px;
+  }
+}
+@media all and (min-width: 992px) {
+  .composition p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 }
 .composition p:nth-child(1) {
   width: 85%;
@@ -259,43 +347,63 @@ button span:nth-child(3) {
   font-family: "Kalam";
   font-weight: 300;
 }
+#menu_1 .sub_section h4 {
+  font-weight: bolder;
+}
 
 #title_menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 24px;
+}
+@media all and (min-width: 992px) {
+  #title_menu {
+    margin-bottom: 20px;
+  }
 }
 #title_menu img {
-  width: 20%;
+  width: 25%;
 }
 #title_menu h3 {
   font-family: "Devonshire";
-  font-size: 2em;
+  font-size: 23px;
   font-weight: 100;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
-
-.menu_item h4 {
-  font-size: 1em;
+@media all and (min-width: 992px) {
+  #title_menu h3 {
+    font-size: 50px;
+  }
 }
 
 #last_item {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   font-family: "Devonshire";
   width: 45%;
+  margin-top: 17px;
   margin-bottom: 20px;
+}
+@media all and (min-width: 992px) {
+  #last_item {
+    align-items: center;
+  }
 }
 #last_item img {
   max-height: 20px;
+  margin-right: 5px;
 }
 #last_item p {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 1.5em;
+  font-size: 17px;
+  margin: 0;
+}
+@media all and (min-width: 992px) {
+  #last_item p {
+    font-size: 25px;
+  }
 }
 
 /*----------------------------
@@ -307,18 +415,33 @@ button span:nth-child(3) {
 }
 #menu_2 h3 {
   font-family: "Croissant One";
-  font-size: 1.5em;
+  font-size: 15px;
   font-weight: lighter;
   background: -webkit-linear-gradient(left, #e27f0e, #8f5aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media all and (min-width: 576px) {
+  #menu_2 h3 {
+    font-size: 30px;
+  }
+}
+#menu_2 .menu_item {
+  margin-bottom: 30px;
+}
+#menu_2 .title {
+  margin-bottom: 20px;
+}
 #menu_2 h4 {
-  font-size: 0.8em;
   font-weight: bold;
 }
-#menu_2 p {
-  font-size: 0.8em;
+#menu_2 .title img {
+  width: 18%;
+}
+@media all and (min-width: 992px) {
+  #menu_2 .title img {
+    width: 29%;
+  }
 }
 
 #item_1 {
@@ -342,13 +465,37 @@ button span:nth-child(3) {
 }
 #menu_3 h3 {
   font-family: "Dancing Script";
-  font-size: 2em;
+  font-size: 25px;
   background: -webkit-linear-gradient(left, #173BDA, #5FA4F1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media all and (min-width: 576px) {
+  #menu_3 h3 {
+    font-size: 40px;
+  }
+}
+@media all and (min-width: 992px) {
+  #menu_3 h3 {
+    font-size: 50px;
+  }
+}
+#menu_3 .menu_item {
+  margin-bottom: 30px;
+}
+#menu_3 .title {
+  margin-bottom: 20px;
+}
 #menu_3 h4 {
   font-weight: lighter;
+}
+#menu_3 .title img {
+  width: 26%;
+}
+@media all and (min-width: 992px) {
+  #menu_3 .title img {
+    width: 29%;
+  }
 }
 
 /*----------------------------
@@ -360,10 +507,20 @@ button span:nth-child(3) {
 }
 #menu_4 h3 {
   font-family: "Kaushan Script";
-  font-size: 2em;
+  font-size: 22px;
   background: -webkit-linear-gradient(left, #6AA256, #CCFE8F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media all and (min-width: 576px) {
+  #menu_4 h3 {
+    font-size: 30px;
+  }
+}
+@media all and (min-width: 992px) {
+  #menu_4 h3 {
+    font-size: 50px;
+  }
 }
 #menu_4 h4 {
   font-weight: 100;

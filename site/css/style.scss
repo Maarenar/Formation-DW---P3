@@ -32,18 +32,10 @@ header{
     a{
         color: #F5CD60;
         text-decoration: none;
+        @media all and (min-width: 992px){
+            font-size: 45px;
+        }
     }
-}
-
-h2{
-    margin-bottom: 10px;
-    font-size: 1em;
-    font-weight: 100;
-}
-
-p{
-	margin-top: 5px;
-	margin-bottom: 5px;
 }
 
 /*-----------------------------------------------------------------------------------------------
@@ -52,19 +44,25 @@ p{
 footer{
     position: fixed;
     bottom: 0;
-	height: 30px;
+	height: 37px;
 	width: 100%;
 	background-color: #689A88;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+    align-items: center;
+    @media all and (min-width: 992px){
+        height: 50px;
+    }
     a{
         text-decoration: none;
         color: #F5CD60;
-        font-size: 0.7em;
+        font-size: 14px;
         margin-left: 10px;
         margin-right: 10px;
+        @media all and (min-width: 992px){
+            font-size: 20px;
+        }
         &:hover{
             animation: wiggle 0.3s;
         }
@@ -118,12 +116,21 @@ footer{
 	flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
+    @media all and (min-width: 992px){
+        margin-top: 80px;
+    }
     a{
         display: inline-block;
         overflow: hidden;
         width: 40%;
         box-shadow: 0px 0px 10px 0px rgba(201,197,201,1);
         margin-bottom: 40px;
+        @media all and (min-width: 576px){
+            width: 34%;
+        }
+        @media all and (min-width: 992px){
+            width: 22%;
+        }
     }
     img{
         width: 100%;
@@ -145,11 +152,18 @@ footer{
 button{
 	margin-bottom: 50px;
 	color: #F5CD60;
-	font-size: 1em;
+	font-size: 12px;
 	background-color: #689A88;
 	border-radius: 5px;
 	padding: 5px 20px 5px 20px;
     border: none;
+    @media all and (min-width: 768px){
+        font-size: 20px;
+    }
+    @media all and (min-width: 992px){
+        font-size: 20px;
+        padding: 10px 25px 10px 25px;
+    }
     span{
         animation-name: blink;
 	    animation-duration: 1.4s;
@@ -188,41 +202,70 @@ button{
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    @media all and (min-width: 992px){
+       margin-bottom: 40px;
+    }
+}
+
+h2{
+    margin-bottom: 35px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 100;
+    @media all and (min-width: 992px){
+        font-size: 30px;
+    }
 }
 
 .sub_section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-size: 0.8em;
+	font-size: 10px;
 	box-shadow: 0px 0px 10px 0px rgba(201,197,201,1);
 	margin-bottom: 30px;
-	width: 90%;
+    width: 90%;
+    @media all and (min-width: 768px){
+        width: 60%;
+        margin-top: 30px;
+    }
 }
 
 .menu_item{
-	width: 90%;
+	width: 81%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
+    @media all and (min-width: 992px){
+        margin-bottom: 15px;
+    }
 }
+
 .title{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 5px;
     height: 30px;
+    @media all and (min-width:992px){
+        margin-bottom: 30px;
+    }
     img{
         max-height: 5px;
-        width: 30%;
+        width: 29%;
         &.reverse{
             transform: rotateY(180deg);
         }
-        &.smaller_width{
-            width: 22%;
+    }
+    h4{
+        font-size: 12px;
+        @media all and (min-width: 576px){
+            font-size: 15px;
+        }
+        @media all and (min-width: 992px){
+            font-size: 20px;
         }
     }
 }
@@ -231,11 +274,23 @@ button{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    p:nth-child(1){
-        width: 85%;
-    }
-    p:nth-child(2){
-        width: 10%;
+    p{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        @media all and (min-width: 576px){
+            font-size: 15px;
+        }
+        @media all and (min-width: 992px){
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        &:nth-child(1){
+            width: 85%;
+        }
+        &:nth-child(2){
+            width: 10%;
+        }
     }
     &.small_width{
         width: 85%;
@@ -259,49 +314,61 @@ button{
 /*----------------------------
 			MENU 1
 ----------------------------*/
-#menu_1 .sub_section{
-	background-color: #F8E1DD;
-	font-family: 'Kalam';
-	font-weight: 300;
+#menu_1 {
+    .sub_section{
+        background-color: #F8E1DD;
+        font-family: 'Kalam';
+        font-weight: 300;
+        h4{
+            font-weight: bolder;
+        }
+    }
 }
 
 #title_menu{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 30px;
+    margin-top: 24px;
+    @media all and (min-width: 992px){
+        margin-bottom: 20px;
+    }
     img{
-        width: 20%;
+        width: 25%;
     }
     h3{
         font-family: 'Devonshire';
-	    font-size: 2em;
+	    font-size: 23px;
 	    font-weight: 100;
         margin-top: 0;
-        margin-bottom: 30px;
-    }
-}
-
-.menu_item{
-    h4{
-        font-size: 1em;
+        margin-bottom: 10px;
+        @media all and (min-width: 992px){
+            font-size: 50px;
+        }
     }
 }
 
 #last_item{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	font-family: 'Devonshire';
     width: 45%;
+    margin-top: 17px;
     margin-bottom: 20px;
+    @media all and (min-width: 992px){
+        align-items: center;
+    }
     img{
         max-height: 20px;
+        margin-right: 5px;
     }
     p{
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 1.5em;
+        font-size: 17px;
+        margin: 0;
+        @media all and (min-width: 992px){
+            font-size: 25px;
+        }
     }
 }
 
@@ -316,18 +383,29 @@ button{
     }
     h3{
         font-family: 'Croissant One';
-        font-size: 1.5em;
+        font-size: 15px;
         font-weight: lighter;
         background: -webkit-linear-gradient(left, #e27f0e, #8f5aff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        @media all and (min-width: 576px){
+            font-size: 30px;
+        }
+    }
+    .menu_item{
+        margin-bottom: 30px;
+    }
+    .title{
+        margin-bottom: 20px;
     }
     h4{
-        font-size: 0.8em;
         font-weight: bold;
     }
-    p{
-        font-size: 0.8em;
+    .title img{
+        width: 18%;
+        @media all and (min-width: 992px){
+            width: 29%;
+        }
     }
 }
 
@@ -354,13 +432,31 @@ button{
     }
     h3{
         font-family: 'Dancing Script';
-        font-size: 2em;
+        font-size: 25px;
         background: -webkit-linear-gradient(left, #173BDA, #5FA4F1);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        @media all and (min-width: 576px){
+            font-size: 40px;
+        }
+        @media all and (min-width: 992px){
+            font-size: 50px;
+        }
+    }
+    .menu_item{
+        margin-bottom: 30px;
+    }
+    .title{
+        margin-bottom: 20px;
     }
     h4{
         font-weight: lighter;
+    }
+    .title img{
+        width: 26%;
+        @media all and (min-width: 992px){
+            width: 29%;
+        }
     }
 
 }
@@ -375,13 +471,18 @@ button{
     }
     h3{
         font-family: 'Kaushan Script';
-        font-size: 2em;
+        font-size: 22px;
         background: -webkit-linear-gradient(left, #6AA256, #CCFE8F);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        @media all and (min-width: 576px){
+            font-size: 30px;
+        }
+        @media all and (min-width: 992px){
+            font-size: 50px;
+        }
     }
     h4{
         font-weight: 100;
     }
-    
 }
