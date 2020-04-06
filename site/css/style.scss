@@ -143,10 +143,12 @@ footer{
 
 @keyframes zoomout{
 	from{
-		transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
 	}to{
-		transform: scale(1.2);
-	}
+        transform: scale(1.2);
+        opacity: (0.7);
+	} 
 }
 
 button{
