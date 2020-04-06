@@ -266,8 +266,8 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 30px;
+  width: 100%;
 }
 @media all and (min-width: 992px) {
   .title {
@@ -283,6 +283,10 @@ h2 {
 }
 .title h4 {
   font-size: 12px;
+  margin: 0 0;
+}
+.title h4:hover ~ .hover_underline {
+  transform: scale(1);
 }
 @media all and (min-width: 576px) {
   .title h4 {
@@ -293,6 +297,13 @@ h2 {
   .title h4 {
     font-size: 20px;
   }
+}
+.title .hover_underline {
+  height: 1px;
+  background-color: black;
+  transform: scale(0);
+  transition: transform 500ms;
+  transform-origin: 0 0;
 }
 
 .composition {
@@ -447,13 +458,22 @@ h2 {
 #item_1 {
   color: #BB782E;
 }
+#item_1 .hover_underline {
+  background-color: #BB782E;
+}
 
 #item_2 {
   color: #9C6A96;
 }
+#item_2 .hover_underline {
+  background-color: #9C6A96;
+}
 
 #item_3 {
   color: #694DC5;
+}
+#item_3 .hover_underline {
+  background-color: #694DC5;
 }
 
 /*----------------------------
