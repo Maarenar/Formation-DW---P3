@@ -65,48 +65,80 @@ footer{
         }
         &:hover{
             animation: wiggle 0.3s;
-        }
-        &:focus{
-            animation: wiggle 0.3s;
             -webkit-animation: wiggle 0.3s;
-            -moz-animation: wiggle 0.3s;
         }
     }
 }
 
 @keyframes wiggle{
 	0%{
-		rotate: 0deg;
+        transform: rotate(0deg);
 	}
 	10%{
-		rotate: 5deg;
+		transform:rotate(5deg);
 	}
 	20%{
-		rotate: 0deg;
+		transform: rotate(0deg);
 	}
 	30%{
-		rotate: -5deg;
-	}
+		transform: rotate(-5deg);
+	} 
 	40%{
-		rotate: 0deg;
+		transform: rotate(0deg);
 	}
 	50%{
-		rotate: 5deg;
+		transform:rotate(5deg);
 	}
 	60%{
-		rotate:0deg;
+		transform: rotate(0deg);
 	}
 	70%{
-		rotate: -5deg;
+		transform: rotate(-5deg);
 	}
 	80%{
-		rotate: 0deg;
+		transform: rotate(0deg);
 	}
 	90%{
-		rotate: 5deg;
+		transform:rotate(5deg);
 	}
 	100%{
-		rotate: 0deg;
+		transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes wiggle{
+    0%{
+        -webkit-transform: rotate(0deg);
+	}
+	10%{
+		-webkit-transform:rotate(5deg);
+	}
+	20%{
+		-webkit-transform: rotate(0deg);
+	}
+	30%{
+		-webkit-transform: rotate(-5deg);
+	}
+	40%{
+		-webkit-transform: rotate(0deg);
+	}
+	50%{
+		-webkit-transform:rotate(5deg);
+	}
+	60%{
+		-webkit-transform: rotate(0deg);
+	}
+	70%{
+		-webkit-transform: rotate(-5deg);
+	}
+	80%{
+		-webkit-transform: rotate(0deg);
+	}
+	90%{
+		-webkit-transform:rotate(5deg);
+	}
+	100%{
+		-webkit-transform: rotate(0deg);
 	}
 }
 
@@ -143,13 +175,6 @@ footer{
         vertical-align: bottom;
         &:hover{
             animation: zoomout 1s;
-            -webkit-animation: zoomout 1s;
-            -moz-animation: zoomout 1s;
-        }
-        &:focus{
-            animation: zoomout 1s;
-            -webkit-animation: zoomout 1s;
-            -moz-animation: zoomout 1s;
         }
     }
 }
