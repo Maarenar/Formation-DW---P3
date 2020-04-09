@@ -72,6 +72,11 @@ footer a {
 footer a:hover {
   animation: wiggle 0.3s;
 }
+footer a:focus {
+  animation: wiggle 0.3s;
+  -webkit-animation: wiggle 0.3s;
+  -moz-animation: wiggle 0.3s;
+}
 
 @keyframes wiggle {
   0% {
@@ -114,31 +119,32 @@ footer a:hover {
 #home {
   display: flex;
   width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   margin-top: 20px;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
   #home {
-    margin-top: 80px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 #home a {
   display: inline-block;
   overflow: hidden;
-  width: 40%;
+  width: 50%;
   box-shadow: 0px 0px 10px 0px #c9c5c9;
   margin-bottom: 40px;
 }
-@media all and (min-width: 576px) {
+@media all and (min-width: 768px) {
   #home a {
     width: 34%;
   }
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 1500px) {
   #home a {
-    width: 22%;
+    width: 21%;
   }
 }
 #home img {
@@ -147,6 +153,13 @@ footer a:hover {
 }
 #home img:hover {
   animation: zoomout 1s;
+  -webkit-animation: zoomout 1s;
+  -moz-animation: zoomout 1s;
+}
+#home img:focus {
+  animation: zoomout 1s;
+  -webkit-animation: zoomout 1s;
+  -moz-animation: zoomout 1s;
 }
 
 @keyframes zoomout {
@@ -156,11 +169,11 @@ footer a:hover {
   }
   to {
     transform: scale(1.2);
-    opacity: 0.7;
+    opacity: 0.5;
   }
 }
 button {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   color: #F5CD60;
   font-size: 12px;
   background-color: #689A88;
@@ -175,8 +188,14 @@ button {
 }
 @media all and (min-width: 992px) {
   button {
-    font-size: 20px;
+    font-size: 26px;
     padding: 10px 25px 10px 25px;
+  }
+}
+@media all and (min-width: 1500px) {
+  button {
+    font-size: 40px;
+    margin-top: 150px;
   }
 }
 button span {
