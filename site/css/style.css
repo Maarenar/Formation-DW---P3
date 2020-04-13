@@ -331,7 +331,7 @@ h2 {
   font-size: 12px;
   margin: 0 0;
 }
-.title h4:hover ~ .hover_underline {
+.title h4:hover + .hover_underline {
   transform: scale(1);
 }
 @media all and (min-width: 576px) {
