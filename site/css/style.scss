@@ -218,6 +218,7 @@ button{
 	        animation-duration: 1.4s;
 	        animation-iteration-count: infinite;
 	        animation-fill-mode: both;
+		animation-delay: .2s;
         }
         &:nth-child(3){
             animation-delay: .4s;
